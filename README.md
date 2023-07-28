@@ -1,2 +1,2 @@
 # YuGiOhCardArtSaver
-Saves the raw art and a 114x94 ver for my inscryption mod.
+Run the script enter the card name done check the Output folder.
