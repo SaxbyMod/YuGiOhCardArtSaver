@@ -53,12 +53,17 @@ while True:
         card = card_data[0]
         print(f"Name: {card.get('name')}")
         print(f"Type: {card.get('type')}")
-        print(f"Attribute: {card.get('attribute')}")
-        print(f"Race (Typing): {card.get('race')}")
-        print(f"Level/Rank: {card.get('level')}")
-        print(f"ATK: {card.get('atk')}")
-        print(f"DEF: {card.get('def')}")
-        print(f"Archetype: {card.get('archetype')}")
+        if "Spell" in card.get('type') or "Trap" in card.get('type'):
+            print(f"Attribute: {card.get('property')}")
+            print(f"Race (Typing): {card.get('race')}")
+            print(f"Archetype: {card.get('archetype')}")
+        else:
+            print(f"Attribute: {card.get('attribute')}")
+            print(f"Race (Typing): {card.get('race')}")
+            print(f"Level/Rank: {card.get('level')}")
+            print(f"ATK: {card.get('atk')}")
+            print(f"DEF: {card.get('def')}")
+            print(f"Archetype: {card.get('archetype')}")
         print(f"Card Text: {card.get('desc')}")
     else:
         print(f"No card found for '{card_name}'.")
