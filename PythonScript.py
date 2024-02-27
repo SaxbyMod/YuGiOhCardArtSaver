@@ -38,7 +38,7 @@ while True:
 
         # Open the image and crop it to the desired region (49,111) - (371,433)
         img = Image.open(BytesIO(response.content))
-        img = img.crop((49, 111, 371, 433))
+        img = img.crop((96, 216, 718, 835))
 
         # Save the cropped image
         img.save(f'Output/{card_name}_art.jpg')
